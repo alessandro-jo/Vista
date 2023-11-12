@@ -79,30 +79,56 @@
 
     </ul>
 
-    <img src="https://static9.depositphotos.com/1010305/1139/i/450/depositphotos_11390423-stock-photo-kitten-on-a-white-background.jpg" alt="alemeco">
-
     <ul>
-      <li>-</li>
       <li>M</li>
       <li>E</li>
       <li>C</li>
       <li>O</li>
     </ul>
+
+    <section>
+      <div class="gallery">
+          <article class="card">
+              <figure>
+                  <img src="images/html5.jpg" alt="moto1">
+                  <figcaption>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="card">
+              <figure>
+                  <img src="images/css.jpg" alt="moto2">
+                  <figcaption>
+                  </figcaption>
+              </figure>
+          </article>
+          <article class="card">
+              <figure>
+                  <img src="images/js.jpeg" alt="moto3">
+                  <figcaption>
+                  </figcaption>
+              </figure>
+          </article>
+      </div>
+
+      <script>
+        const li = document.querySelectorAll('li');
+        let i = 0.2;
+  
+        li.forEach( lista => {
+          lista.style.animationDelay = `${i}s`;
+          i += 0.2;
+        });
+      </script>
+  </section>
     <!--Header ends-->
     <!--Content starts-->
-    <div class="content flex">
-    <p><span class="nombre">Aprendiendo HTML y CSS | Alessandro Martinez</span> </p>
-    </div>
+
     <!--Content ends-->
-
-    <script>
-      const li = document.querySelectorAll('li');
-      let i = 0.2;
-
-      li.forEach( lista => {
-        lista.style.animationDelay = `${i}s`;
-        i += 0.2;
-      });
-    </script>
   </body>
+  <footer>
+    <div class="content flex">
+      <p><span class="nombre">Aprendiendo HTML y CSS | Alessandro Martinez</span> </p>
+      </div>
+  </footer>
 </html>
